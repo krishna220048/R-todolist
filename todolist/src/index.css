@@ -1,0 +1,149 @@
+body {
+  background-image: url("./img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(
+    to right,
+    rgb(66, 66, 236),
+    rgb(1, 1, 247),
+    rgb(0, 119, 255)
+  );
+}
+
+h1 {
+  text-align: center;
+  margin: -1px 0px 0px 20px;
+}
+
+.main {
+  background: transparent;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 1px 16px 16px;
+  width: 100%;
+  min-width: 400px;
+  box-sizing: border-box;
+  border: 2px solid white;
+}
+.main:hover {
+  box-shadow: 0px 0px 20px white;
+}
+
+.main1 {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.main1 input[type="text"] {
+  flex-grow: 1;
+  padding: 12px 12px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+  outline: none;
+  min-width: 0;
+  color: blue;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #0056b3;
+  text-align: center;
+  font-size: 18px;
+}
+.main1 button {
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: 17px;
+}
+
+.main1 button:hover {
+  border: 1px solid white;
+  background-color: transparent;
+  box-shadow: 0px 0px 10px white;
+}
+
+.content ol {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.content li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  margin-bottom: 12px;
+  flex-wrap: nowrap;
+}
+
+.content li span {
+  flex-grow: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+}
+
+.content li button {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 200;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.content li button:first-of-type {
+  background-color: #f10505;
+  color: white;
+}
+
+.content li button:first-of-type:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px white;
+}
+
+.content li button:last-of-type {
+  background-color: #018921;
+  color: white;
+}
+
+.content li button:last-of-type:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  box-shadow: 0px 0px 10px white;
+}
+
+@media (max-width: 480px) {
+  .main1 {
+    flex-direction: column;
+  }
+  .main1 button {
+    width: 100%;
+  }
+  .content li {
+    flex-wrap: wrap;
+    font-size: 16px;
+  }
+  .content li button {
+    flex-grow: 1;
+    margin-top: 6px;
+  }
+}
