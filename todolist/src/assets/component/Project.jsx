@@ -7,7 +7,7 @@ function Project() {
   const [editId, setEditId] = useState(null);
   const [editText, setEditText] = useState("");
 
-  const API = "http://localhost:3000/todolist";
+  const API = "https://mern-todolist-2-06kb.onrender.com"
 
   useEffect(() => {
     fetchTodos();
